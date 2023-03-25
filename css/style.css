@@ -1,0 +1,572 @@
+/* --------------------------------------------------DEFULT CSS--------------------------------------------- */
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+}
+.d-flex{
+    display: flex;
+}
+.justify-sapce-between{
+    justify-content: space-between;
+}
+.align-item{
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+:root{
+    --primary-color:#fab700;
+}
+/* ------------TOP HEADER------------- */
+.top-header{
+    border-bottom: 1px solid var(--primary-color);
+}
+.th-icon a{
+    text-align: center;
+    font-size: 18px;
+    margin-left:15px;
+    color: rgb(56, 56, 113);
+}
+.th-info  select option{
+    background-color:rgb(84, 84, 142);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+select{
+    padding: 5px 8px 5px 8px;
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(56, 56, 113);
+}
+.th-info .btn1{
+    padding: 7px 10px 7px 10px;
+    background-color:var(--primary-color);
+    border: 1px solid transparent;
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    margin-left: 5px;
+    transition: .6s;
+}
+.th-info .btn1:hover{
+    color:var(--primary-color);
+    background-color: coral ;
+    border: 1px solid var(--primary-color);
+}
+/* ------------BOTTOM HEADER----------- */
+.b-h{
+    margin: 10px 0 10px 0;
+}
+nav ul li a{
+    color: black;
+    font-family: 'Roboto';
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: .6s;
+    margin-bottom: 10px;
+}
+nav ul li:hover a{
+    color: var(--primary-color);
+}
+.home{
+    color: var(--primary-color);
+}
+/* -----------------BANNER----------------- */
+.banner-img{
+    background-image: url(../images/asset\ 21.webp);
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-top: -8px;
+    /* background-size: cover; */
+}
+
+.banner-content{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translateY(-50%);
+}
+.banner-content h1{  
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Oswald';
+    line-height: 70px;
+    margin-bottom: 20px;
+} 
+.banner-content p{
+    color: #fff;
+    line-height: 24px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+.banner-content span{
+    background: var(--primary-color);
+    border-radius: 4px;
+    line-height: 60px;
+    color: #222;
+    padding: 2px 4px 5px 4px;
+    display: inline-block;
+    
+}
+.btn{
+    margin-top: 40px;
+}
+.btn a{
+    background-color: #222222;
+    padding: 15px 40px;
+    transition: .4s;
+    font-family: 'Roboto';
+    margin-left: -5%;
+    color: var(--primary-color);
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.btn:hover a{
+    background-color: var(--primary-color);
+    color: #222;
+}
+/* -----------------SERVICE AREA----------------- */
+.content{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom:20px;
+}
+.bgservice .container .title h2{
+    font-size: 34px;
+    color: #222;
+    font-weight: 500;
+    font-family: 'Oswald';
+}
+.bgservice .container .title{
+    margin-top: 120px;
+    margin-bottom: 70px;
+} 
+.con{
+    margin-right: 20px;
+}
+.service{
+    width: 33.33%;
+    padding: 45px 55px;
+    margin-top: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    transition: .4s;
+}
+.service:hover{
+    box-shadow:  0px 10px 30px rgba(0, 0, 0,10%);
+}
+.con h2{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Oswald';
+
+    color: #222;
+    margin-bottom: 20px;
+}
+.con img{
+    margin-bottom: 20px;
+}
+.con p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+}
+/* -----------------DEPARTMENT----------------- */
+.department{
+    background-color: #fff;
+}
+.dep-heading h3{
+    font-family: 'Oswald';
+    text-align: center;
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+.dep-heading p{
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 14px;
+    color:#777;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+.builder-item:before{
+    content: '';
+    width: 100%;
+    height:277px;
+    background-color: rgba(250, 183, 0, 0.8);
+    position: absolute;
+    top: -5px;
+    left: 0;
+    opacity: 0;
+    transition: all .3s;
+}
+.builder-item:hover::before{
+    opacity: 1;
+}
+.dep-img{
+    display: flex;
+    flex-wrap: wrap;
+}
+.builder-item{
+    max-width: 33.33%;
+    position: relative;
+}
+
+.dep-img .builder-item img{
+    width: 100%;
+    margin-top:-5px;
+}
+.builder-item .hover h4{
+    color: #222;
+    font-size: 20px;
+    padding-top: 110px;
+}
+.builder-item .hover p{
+    font-size: 14px;
+    padding-top: 30px;
+    /* max-width: 470px; */
+    height: 150px;
+    cursor: pointer;
+    color: #222;
+    /* line-height:24px; */
+    font-family: 'Roboto';
+}
+.builder-item .hover{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    opacity: 0;
+    transition: all .3s;
+}
+.builder-item .hover:hover{
+    opacity: 1;
+}
+/* ---------------------TEAM MEMBERS--------------- */
+.members{
+    padding: 120px 0 120px 0;
+}
+.members .container .title h3{
+    font-size: 36px;
+    font-family: 'Oswald';
+    color: #222;
+    margin-bottom: 15px;
+    margin-top: 75px;
+}
+.members .container .title p{
+    font-size: 14px;
+    color: #222;
+    font-family: 'Roboto';
+}
+.team .team-item .team-img{
+    margin-left:15px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+}
+.team{
+    margin-top: 60px;
+    max-width: 25%;
+}
+.name{
+    text-align: center;
+}
+.team-item{
+    position: relative;
+}
+.team-img{
+    position: relative;
+}
+.team-img .name h4{
+    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Oswald';
+    margin-top: 15px;
+    margin-bottom: 5px;
+} 
+.team-img .name p{
+    font-size: 14px;
+    color: #777;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+/* ---------------------COUNTER--------------- */
+.bg-area{
+    background-color: var(--primary-color);
+    padding: 80px 0;
+}
+.container .counter h4{
+    font-size: 48px;
+    font-family: "Oswald";
+    font-weight: 500;
+    text-align: left;
+    color: #222;
+}
+.container .counter span{
+    color: #222;
+    font-family: "Roboto";
+    margin: 0;
+    font-size: 14px;
+}
+/* ---------------------FEATURES--------------- */
+.inner-features{
+    padding: 90px 0 90px 0;
+}
+.main-title{
+    margin-bottom: 75px;
+}
+.features .container .main-title h5{
+    font-size: 36px;
+    font-family: 'Oswald';
+    color: #222;
+    margin-bottom: 15px;
+}
+.features .container .main-title small{
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #777;
+    line-height: 24px;
+}
+.features-inner{
+    /* max-width: 33.33%; */
+}
+.features-iteam{
+    max-width: 33.33%;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 40px 60px 40px 40px;
+    margin-bottom: 40px;
+    transition: all .6s;
+}
+.features-iteam h4{
+    font-size: 18px;
+    text-align: left;
+    font-family: "Oswald";
+    padding: 0 0 20px;
+    top: 5px;
+    color: #222;
+    transition: all .6s;
+}
+ .features-iteam h4 i{
+    margin-right:5px;
+}
+.features-iteam p{
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #777;
+}
+.features-iteam h4:hover{
+    color: var(--primary-color);
+} 
+.features-iteam:hover{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 10%);
+    border: 1px solid transparent;
+}
+/* ---------------CEO-SECTION------------- */
+.bg-color{
+    background-color: #f9f9ff;
+}
+.item{
+    margin:70px 0 70px ;
+    padding: 30px 0;
+}
+.box{
+    border: 1px solid #ccc;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 50%;
+    transition: .6s;
+}
+.box:hover{
+    border: 1px solid transparent;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 10%);
+}
+.box .media img{
+    margin-right: 10px;
+}
+.box-body p{
+    text-align: left;
+    color: #777;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.box-body h4{
+    text-align: left;
+    color: #222;
+    font-family: "Oswald";
+    font-size: 20px;
+    line-height: 24px;
+    transition: .6s;
+}
+.box-body h4:hover{
+    color: var(--primary-color);
+}
+.box-body h3{
+    font-size: 14px;
+    color: #777;
+    line-height: 17px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-top: 5px;
+    text-align: left;
+}
+/* ---------------logo------------- */
+.logo-5{
+    padding: 70px 0 70px 0;
+}
+.logo-area{
+    margin: 50px 0;
+}
+.logo-5 .logo-area img{
+    opacity: .5;
+    transition: .4s;
+}
+.logo-5 .logo-area img:hover{
+    opacity: 1;
+}
+/* ---------------FOOTER------------- */
+.about-s{
+    max-width: 25%;
+}
+.contact-s{
+    max-width: 25%;
+}
+.email{
+    max-width: 41.66%;
+}
+.f-bg{
+    background-color: #222;
+    padding: 100px 0;
+}
+.about-s h1{
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-align: start;
+    font-weight: 500;
+    font-family: "Oswald";
+    margin-bottom: 30px;
+}
+.about-s p{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Roboto';
+    color: #777;
+    font-weight: 400;
+    text-align: start;
+}
+.contact-s h2{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: start;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Oswald";
+    margin-bottom: 30px;
+}
+.contact-s p{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Roboto';
+    color: #777;
+    font-weight: 400;
+    text-align: start;
+    margin-bottom: 15px;
+}
+.contact-s h3{
+    color: #fab700;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: start;
+    font-family: 'Roboto';
+    margin-bottom: 10px;
+}
+.email h2{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: start;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Oswald";
+    margin-bottom: 30px;
+}
+.email h3{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Roboto';
+    color: #777;
+    font-weight: 400;
+    text-align: start;
+    margin-bottom: 15px;
+}
+.email input{
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px 30px 10px 30px;
+    font-size: 13px;
+    border: none;
+    color: #999;
+    text-align: start;
+    border-radius: 20px;
+}
+.f-bottam h1{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Roboto';
+    color: #777;
+    font-weight: 400;
+    text-align: start;
+    margin-top:50px;
+}
+.f-bottam h1 a{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Roboto';
+    color:var(--primary-color);
+    font-weight: 400;
+    text-align: start;
+    margin-top:50px; 
+}
+.f-bottam .f-b-icon a{
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    margin-top:50px;
+    background-color:#111;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+}
